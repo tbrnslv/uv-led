@@ -86,8 +86,8 @@ void setState(STATE newState)
   case INITIAL:
     stopTimer();
     exposureTime = 0;
-    printTime(exposureTime);
     display.snake(1);
+    printTime(exposureTime);
     break;
   case TIMER_EDITABLE:
     blinking = true;
@@ -214,6 +214,7 @@ void readEncoder()
       exposureTime = exposureTime + 5;
     }
     position = newPosition;
+     Serial.println(exposureTime);
   }
 }
 
