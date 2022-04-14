@@ -10,12 +10,12 @@
 #define ENCODER_DT A2
 #define ENCODER_CLK A3
 #define ENCODER_BUTTON 4
-#define START_BUTTON 5
-#define STOP_BUTTON 6
+#define START_BUTTON 6
+#define STOP_BUTTON 7
 #define DISPLAY_DIO 9
 #define DISPLAY_CLK 10
 #define BUZZER 11
-#define UV_LED 13
+#define UV_LED 2
 
 Pushbutton encoderButton(ENCODER_BUTTON);
 Pushbutton startButton(START_BUTTON);
